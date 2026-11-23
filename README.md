@@ -2,7 +2,7 @@
 
 > 专为 AI Agent（Antigravity、Claude Code、Cursor、Windsurf 等）打造的自定义能力与工作流扩展仓库。
 
-[![Skills Count](https://img.shields.io/badge/Skills-2%20Active-brightgreen.svg)](#-技能全景矩阵-skills-matrix)
+[![Skills Count](https://img.shields.io/badge/Skills-3%20Active-brightgreen.svg)](#-技能全景矩阵-skills-matrix)
 [![Shell](https://img.shields.io/badge/Platform-macOS%20%7C%20Linux-blue.svg)](#-快速安装与配置-installation)
 [![Workflow](https://img.shields.io/badge/Standard-Agent%20Skill%20Spec-orange.svg)](#-开发与贡献新技能-skill-development-guide)
 
@@ -30,6 +30,7 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | [`commit-and-merge`](./commit-and-merge/SKILL.md) | **研发提效 / Git 流水线** | 工作区自动暂存提交、推送远程、合并至部署分支（如 develop/pre）、触发 CI/CD 并安全切回 | `/ship`, `/commit-and-merge`, "发布预发", "提交合并" | Bash 引擎脚本、参数配置指南 | `Stable` |
 | [`creative-tech-ad`](./creative-tech-ad/SKILL.md) | **AIGC / 多模态视频提示词** | 顶级科技发布会严肃风格包装日常接地气事物，生成端到端声画一体（海螺/MiniMax H3）分镜脚本与提示词 | "创意广告", "科技风广告", "包装土豆/大蒜", "生成带货脚本" | 15s 标准模板、黑话字典、经典成片样例 | `Stable` |
+| [`fake-site`](./fake-site/SKILL.md) | **VPS / REALITY 回落站** | 用本机 nginx 个人页替换被盗用的 REALITY dest，浏览器看到正常站点，xray 仍占用 443 | "伪装站点", "fake site", "REALITY dest", "127.0.0.1:8443" | 实施顺序、x-ui 字段、验收表 | `Stable` |
 
 ---
 
@@ -148,6 +149,8 @@ custom-skills/
 │   │   └── commit-and-merge.sh         # 通用跨分支合并与部署执行引擎
 │   └── references/                     # 详细配置与使用指南
 │       └── usage_guide.md              # 参数手册与 Git Alias 配置
+├── fake-site/                          # [Skill] REALITY 回落个人站
+│   └── SKILL.md                        # 实施顺序、x-ui 字段与验收
 └── creative-tech-ad/                   # [Skill] 反差科技创意广告生成器
     ├── SKILL.md                        # Skill 核心定义与工作流规范
     ├── references/                     # 参考手册与生成字典
